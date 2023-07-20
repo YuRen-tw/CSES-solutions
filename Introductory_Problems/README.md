@@ -1,7 +1,8 @@
 # Introductory Problems
 
 | Solved | Here | Task |
-|:---:|:---:|:----|
+|:------:|:----:|:-----|
+| 14     | 6    | 19
 | v | v | `1068` Weird Algorithm
 | v | v | `1083` Missing Number
 | v |   | `1069` Repetitions
