@@ -6,7 +6,7 @@
 | v | v | `1083` Missing Number
 | v |   | `1069` Repetitions
 | v |   | `1094` Increasing Array
-| v |   | `1070` Permutations
+| v | v | `1070` Permutations
 | v | v | `1071` Number Spiral
 | v | v | `1072` Two Knights
 | v |   | `1092` Two Sets
