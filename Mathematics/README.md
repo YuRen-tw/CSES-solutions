@@ -5,7 +5,7 @@
 | 14     | 6    | 19
 | v |   | `2164` Josephus Queries
 | v | v | `1095` Exponentiation
-| v |   | `1712` Exponentiation II
+| v | v | `1712` Exponentiation II
 |   |   | `1713` Counting Divisors
 |   |   | `1081` Common Divisors
 |   |   | `1082` Sum of Divisors
