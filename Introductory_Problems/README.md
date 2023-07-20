@@ -10,7 +10,7 @@
 | v | v | `1071` Number Spiral
 | v | v | `1072` Two Knights
 | v |   | `1092` Two Sets
-| v |   | `1617` Bit Strings
+| v | v | `1617` Bit Strings
 | v |   | `1618` Trailing Zeros
 | v |   | `1754` Coin Piles
 |   |   | `1755` Palindrome Reorder
