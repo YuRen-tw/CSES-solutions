@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 1      | 1    | 77
+| 1      | 1    | 77   |
 | v | v | `1087` Shortest Subsequence
 |   |   | `1146` Counting Bits
 |   |   | `1670` Swap Game

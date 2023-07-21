@@ -4,10 +4,10 @@ import           Data.Maybe (fromJust)
 readInt :: C.ByteString -> Int
 readInt = fst . fromJust . C.readInt
 
-showBS :: (Show a) => a -> C.ByteString
+showBS :: Show a => a -> C.ByteString
 showBS = C.pack . show
 
-tasks :: (Show a) => ([Int] -> [a]) -> IO()
+tasks :: Show a => ([Int] -> [a]) -> IO()
 tasks mapFn = C.interact
     $ C.unlines . map showBS . mapFn . map readInt . drop 1 . C.words
 
