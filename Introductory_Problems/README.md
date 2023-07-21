@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 14     | 6    | 19
+| 14     | 7    | 19   |
 | v | v | `1068` Weird Algorithm
 | v | v | `1083` Missing Number
 | v |   | `1069` Repetitions
@@ -16,7 +16,7 @@
 | v |   | `1754` Coin Piles
 |   |   | `1755` Palindrome Reorder
 | v |   | `2205` Gray Code
-| v |   | `2165` Tower of Hanoi
+| v | v | `2165` Tower of Hanoi
 | v |   | `1622` Creating Strings
 |   |   | `1623` Apple Division
 |   |   | `1624` Chessboard and Queens
