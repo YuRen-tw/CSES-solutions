@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 3      | 3    | 31   |
+| 4      | 4    | 31   |
 | v | v | `2164` Josephus Queries
 | v | v | `1095` Exponentiation
 | v | v | `1712` Exponentiation II
@@ -20,7 +20,7 @@
 |   |   | `2187` Bracket Sequences II
 |   |   | `2209` Counting Necklaces
 |   |   | `2210` Counting Grids
-|   |   | `1722` Fibonacci Numbers
+| v | v | `1722` Fibonacci Numbers
 |   |   | `1096` Throwing Dice
 |   |   | `1723` Graph Paths I
 |   |   | `1724` Graph Paths II
