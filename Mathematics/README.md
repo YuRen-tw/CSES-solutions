@@ -2,8 +2,8 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 14     | 6    | 19
-| v |   | `2164` Josephus Queries
+| 3      | 3    | 31   |
+| v | v | `2164` Josephus Queries
 | v | v | `1095` Exponentiation
 | v | v | `1712` Exponentiation II
 |   |   | `1713` Counting Divisors
