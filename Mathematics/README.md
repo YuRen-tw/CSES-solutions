@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 4      | 4    | 31   |
+| 5      | 5    | 31   |
 | v | v | `2164` Josephus Queries
 | v | v | `1095` Exponentiation
 | v | v | `1712` Exponentiation II

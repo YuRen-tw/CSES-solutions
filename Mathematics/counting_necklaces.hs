@@ -52,11 +52,11 @@ divisors n = divs n 1
           k=1            d|n
 -}
 solve :: Int -> Int -> Int
-solve n k = toInt . (nInv *) . sum . map summand $ divisors n
-  where summand (a, b) = fromInt k ^ a * FieldElem (phi b)
+solve n m = toInt . (nInv *) . sum . map summand $ divisors n
+  where summand (a, b) = fromInt m ^ a * FieldElem (phi b)
         nInv = reciprocal (fromInt n)
 
 main :: IO ()
 main = do
-    [n, k] <- map read . words <$> getLine
-    print $ solve n k
+    [n, m] <- map read . words <$> getLine
+    print $ solve n m
