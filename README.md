@@ -12,7 +12,7 @@
 | Graph Algorithms      |   0 |  36 |
 | Range Queries         |   0 |  19 |
 | Tree Algorithms       |   0 |  16 |
-| Mathematics           |   4 |  31 |
+| Mathematics           |   5 |  31 |
 | String Algorithms     |   0 |  17 |
 | Geometry              |   0 |   7 |
 | Advanced Techniques   |   0 |  24 |

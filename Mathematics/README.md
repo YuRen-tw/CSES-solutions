@@ -18,7 +18,7 @@
 |   |   | `1717` Christmas Party
 |   |   | `2064` Bracket Sequences I
 |   |   | `2187` Bracket Sequences II
-|   |   | `2209` Counting Necklaces
+| v | v | `2209` Counting Necklaces
 |   |   | `2210` Counting Grids
 | v | v | `1722` Fibonacci Numbers
 |   |   | `1096` Throwing Dice
