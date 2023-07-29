@@ -20,5 +20,5 @@
 | v |   | `1622` Creating Strings
 |   |   | `1623` Apple Division
 |   |   | `1624` Chessboard and Queens
-|   |   | `2431` Digit Queries
+| v | v | `2431` Digit Queries
 |   |   | `1625` Grid Paths
