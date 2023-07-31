@@ -4,7 +4,7 @@ import           Data.Maybe (fromJust)
 readInt :: C.ByteString -> Int
 readInt = fst . fromJust . C.readInt
 
-showBS :: (Show a) => a -> C.ByteString
+showBS :: Show a => a -> C.ByteString
 showBS = C.pack . show
 
 ---

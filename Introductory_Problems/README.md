@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 14     | 8    | 19   |
+| 15     | 10   | 19   |
 | v | v | `1068` Weird Algorithm
 | v | v | `1083` Missing Number
 | v |   | `1069` Repetitions
@@ -10,7 +10,7 @@
 | v | v | `1070` Permutations
 | v | v | `1071` Number Spiral
 | v | v | `1072` Two Knights
-| v |   | `1092` Two Sets
+| v | v | `1092` Two Sets
 | v | v | `1617` Bit Strings
 | v | v | `1618` Trailing Zeros
 | v |   | `1754` Coin Piles
