@@ -2,10 +2,10 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 15     | 10   | 19   |
+| 15     | 11   | 19   |
 | v | v | `1068` Weird Algorithm
 | v | v | `1083` Missing Number
-| v |   | `1069` Repetitions
+| v | v | `1069` Repetitions
 | v |   | `1094` Increasing Array
 | v | v | `1070` Permutations
 | v | v | `1071` Number Spiral
