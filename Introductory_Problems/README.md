@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 15     | 11   | 19   |
+| 15     | 12   | 19   |
 | v | v | `1068` Weird Algorithm
 | v | v | `1083` Missing Number
 | v | v | `1069` Repetitions
@@ -13,7 +13,7 @@
 | v | v | `1092` Two Sets
 | v | v | `1617` Bit Strings
 | v | v | `1618` Trailing Zeros
-| v |   | `1754` Coin Piles
+| v | v | `1754` Coin Piles
 |   |   | `1755` Palindrome Reorder
 | v |   | `2205` Gray Code
 | v | v | `2165` Tower of Hanoi
