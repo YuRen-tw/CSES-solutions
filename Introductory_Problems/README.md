@@ -2,11 +2,11 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 15     | 12   | 19   |
+| 15     | 13   | 19   |
 | v | v | `1068` Weird Algorithm
 | v | v | `1083` Missing Number
 | v | v | `1069` Repetitions
-| v |   | `1094` Increasing Array
+| v | v | `1094` Increasing Array
 | v | v | `1070` Permutations
 | v | v | `1071` Number Spiral
 | v | v | `1072` Two Knights
