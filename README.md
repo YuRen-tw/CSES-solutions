@@ -4,17 +4,17 @@
 
 ## Status
 
-| Category | Solved | Total |
-|:----|:---:|:---:|
-| Introductory Problems |  15 |  19 |
-| Sorting and Searching |   2 |  35 |
-| Dynamic Programming   |   0 |  19 |
-| Graph Algorithms      |   0 |  36 |
-| Range Queries         |   0 |  19 |
-| Tree Algorithms       |   0 |  16 |
-| Mathematics           |   5 |  31 |
-| String Algorithms     |   0 |  17 |
-| Geometry              |   0 |   7 |
-| Advanced Techniques   |   0 |  24 |
-| Additional Problems   |   1 |  77 |
-| **Total**             |  23 | 300 |
+| Category | Solved | Here | Total |
+|:----|:---:|:---:|:---:|
+| Introductory Problems |  15 |  13 |  19 |
+| Sorting and Searching |   2 |   1 |  35 |
+| Dynamic Programming   |   0 |   0 |  19 |
+| Graph Algorithms      |   0 |   0 |  36 |
+| Range Queries         |   0 |   0 |  19 |
+| Tree Algorithms       |   0 |   0 |  16 |
+| Mathematics           |   5 |   5 |  31 |
+| String Algorithms     |   0 |   0 |  17 |
+| Geometry              |   0 |   0 |   7 |
+| Advanced Techniques   |   0 |   0 |  24 |
+| Additional Problems   |   1 |   1 |  77 |
+| **Total**             |  23 |  20 | 300 |

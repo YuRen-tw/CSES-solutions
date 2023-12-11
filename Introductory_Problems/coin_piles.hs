@@ -4,9 +4,14 @@ import           Data.Maybe (fromJust)
 readInt :: C.ByteString -> Int
 readInt = fst . fromJust . C.readInt
 
-tasks :: ([Int] -> [C.ByteString]) -> IO()
-tasks mapFn = C.interact
-    $ C.unlines . mapFn . map readInt . drop 1 . C.words
+chop :: ([a] -> (b, [a])) -> [a] -> [b]
+chop _ [] = []
+chop f xs = y : chop f ys
+  where (y, ys) = f xs
+
+tasks :: ([Int] -> (C.ByteString, [Int])) -> IO()
+tasks f = C.interact
+    $ C.unlines . chop f . map readInt . drop 1 . C.words
 
 ---
 
@@ -16,9 +21,5 @@ solve a b =
     then C.pack "YES"
     else C.pack "NO"
 
-map2 :: (a -> a -> b) -> [a] -> [b]
-map2 f (x:y:xs) = f x y : map2 f xs
-map2 _ _        = []
-
 main :: IO ()
-main = tasks $ map2 solve
+main = tasks $ \(a:b:xs) -> (solve a b, xs)
