@@ -14,7 +14,7 @@
 | Tree Algorithms       |   0 |   0 |  16 |
 | Mathematics           |   5 |   5 |  31 |
 | String Algorithms     |   0 |   0 |  17 |
-| Geometry              |   0 |   0 |   7 |
+| Geometry              |   1 |   1 |   7 |
 | Advanced Techniques   |   0 |   0 |  24 |
 | Additional Problems   |   1 |   1 |  77 |
 | **Total**             |  23 |  20 | 300 |
