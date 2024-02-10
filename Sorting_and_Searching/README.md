@@ -2,7 +2,7 @@
 
 | Solved | Here | Task |
 |:------:|:----:|:-----|
-| 2      | 1    | 35   |
+| 3      | 2    | 35   |
 | v |   | `1621` Distinct Numbers
 |   |   | `1084` Apartments
 |   |   | `1090` Ferris Wheel
@@ -25,7 +25,7 @@
 |   |   | `1164` Room Allocation
 |   |   | `1620` Factory Machines
 |   |   | `1630` Tasks and Deadlines
-|   |   | `1631` Reading Books
+| v | v | `1631` Reading Books
 |   |   | `1641` Sum of Three Values
 |   |   | `1642` Sum of Four Values
 |   |   | `1645` Nearest Smaller Values

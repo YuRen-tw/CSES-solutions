@@ -7,8 +7,6 @@ import qualified Data.ByteString.Char8   as C
 import           Data.Char (isSpace)
 import           Data.List (unfoldr)
 
-(<>) = mappend
-
 readInts :: C.ByteString -> [Int]
 readInts = unfoldr (C.readInt . C.dropWhile isSpace)
 
