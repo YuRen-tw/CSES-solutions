@@ -1,11 +1,12 @@
-import qualified Data.ByteString.Lazy.Char8 as C
-import           Data.Maybe (fromJust)
+import qualified Data.ByteString.Char8 as C
+import           Data.Char (isSpace)
+import           Data.List (unfoldr)
 
-readInt :: C.ByteString -> Int
-readInt = fst . fromJust . C.readInt
+readInts :: C.ByteString -> [Int]
+readInts = unfoldr (C.readInt . C.dropWhile isSpace)
 
-showBS :: Show a => a -> C.ByteString
-showBS = C.pack . show
+showInt :: Int -> C.ByteString
+showInt = C.pack . show
 
 ---
 
@@ -15,4 +16,4 @@ solve s prev (x:xs) | x < prev  = solve (s + prev - x) prev xs
                     | otherwise = solve s x xs
 
 main :: IO ()
-main = C.interact $ showBS . solve 0 0 . map readInt . drop 1 . C.words
+main = C.interact $ showInt . solve 0 0 . drop 1 . readInts

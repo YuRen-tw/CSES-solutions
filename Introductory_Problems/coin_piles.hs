@@ -1,25 +1,30 @@
-import qualified Data.ByteString.Lazy.Char8 as C
-import           Data.Maybe (fromJust)
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE OverloadedStrings #-}
 
-readInt :: C.ByteString -> Int
-readInt = fst . fromJust . C.readInt
+import           System.IO (stdout)
+import qualified Data.ByteString.Builder as B
+import qualified Data.ByteString.Char8 as C
+import           Data.Char (isSpace)
+import           Data.List (unfoldr)
 
-chop :: ([a] -> (b, [a])) -> [a] -> [b]
-chop _ [] = []
-chop f xs = y : chop f ys
-  where (y, ys) = f xs
+readInts :: C.ByteString -> [Int]
+readInts = unfoldr (C.readInt . C.dropWhile isSpace)
 
-tasks :: ([Int] -> (C.ByteString, [Int])) -> IO()
-tasks f = C.interact
-    $ C.unlines . chop f . map readInt . drop 1 . C.words
+buildYN :: [Bool] -> B.Builder
+buildYN = foldr f mempty
+  where f x b = (if x then "YES\n" else "NO\n") <> b
+
+tasks :: ([Int] -> Maybe (Bool, [Int])) -> IO ()
+tasks f = do
+    _:ts <- readInts <$> C.getContents
+    B.hPutBuilder stdout . buildYN $ unfoldr f ts
 
 ---
 
-solve :: Int -> Int -> C.ByteString
-solve a b =
-    if (a+b) `mod` 3 == 0 && 2 * min a b >= max a b
-    then C.pack "YES"
-    else C.pack "NO"
+solve :: Int -> Int -> Bool
+solve a b = (a+b) `mod` 3 == 0 && 2 * min a b >= max a b
 
 main :: IO ()
-main = tasks $ \(a:b:xs) -> (solve a b, xs)
+main = tasks $ \case
+    a:b:xs -> Just (solve a b, xs)
+    _      -> Nothing

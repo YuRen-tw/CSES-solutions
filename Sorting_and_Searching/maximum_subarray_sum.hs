@@ -1,25 +1,23 @@
-import qualified Data.ByteString.Lazy.Char8 as C
-import           Data.Maybe (fromJust)
- 
-readInt :: C.ByteString -> Int
-readInt = fst . fromJust . C.readInt
- 
-showBS :: Show a => a -> C.ByteString
-showBS = C.pack . show
- 
+import qualified Data.ByteString.Char8 as C
+import           Data.Char (isSpace)
+import           Data.List (unfoldr)
+
+readInts :: C.ByteString -> [Int]
+readInts = unfoldr (C.readInt . C.dropWhile isSpace)
+
+showInt :: Int -> C.ByteString
+showInt = C.pack . show
+
 ---
 
 -- Kadane's algorithm
-
-lb :: Int
-lb = -1000000000
-
-mssStep :: Int -> (Int, Int) -> (Int, Int)
-mssStep x (best, prev) = (max best curr, curr)
+kadane :: Int -> (Int, Int) -> (Int, Int)
+kadane x (best, prev) = (max best curr, curr)
   where curr = max x (prev + x)
 
 mss :: [Int] -> Int
-mss = fst . foldr mssStep (lb, 0)
+mss = fst . foldr kadane (lb, 0)
+  where lb = -1000000000
 
 main :: IO ()
-main = C.interact $ showBS . mss . map readInt . drop 1 . C.words
+main = C.interact $ showInt . mss . drop 1 . readInts

@@ -1,20 +1,22 @@
-import qualified Data.ByteString.Lazy.Char8 as C
-import           Data.Maybe (fromJust)
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE OverloadedStrings #-}
 
-readInt :: C.ByteString -> Int
-readInt = fst . fromJust . C.readInt
+import           System.IO (stdout)
+import qualified Data.ByteString.Builder as B
+import qualified Data.ByteString.Char8   as C
+import           Data.Char (isSpace)
+import           Data.List (unfoldr)
 
-showBS :: Show a => a -> C.ByteString
-showBS = C.pack . show
+readInts :: C.ByteString -> [Int]
+readInts = unfoldr (C.readInt . C.dropWhile isSpace)
 
-chop :: ([a] -> (b, [a])) -> [a] -> [b]
-chop _ [] = []
-chop f xs = y : chop f ys
-  where (y, ys) = f xs
+buildInts :: [Int] -> B.Builder
+buildInts = foldr (\x b -> B.intDec x <> "\n" <> b) mempty
 
-tasks :: Show a => ([Int] -> (a, [Int])) -> IO()
-tasks f = C.interact
-    $ C.unlines . map showBS . chop f . map readInt . drop 1 . C.words
+tasks :: ([Int] -> Maybe (Int, [Int])) -> IO ()
+tasks f = do
+    _:ts <- readInts <$> C.getContents
+    B.hPutBuilder stdout . buildInts $ unfoldr f ts
 
 ---
 
@@ -29,4 +31,6 @@ solve n k
         nxt = solve (n-m) (k-m)
 
 main :: IO ()
-main = tasks $ \(n:k:xs) -> (solve n k, xs)
+main = tasks $ \case
+    n:k:xs -> Just (solve n k, xs)
+    _      -> Nothing

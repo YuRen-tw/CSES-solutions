@@ -5,7 +5,7 @@ beautiful n | n == 1    = Just [1]
 
 main :: IO ()
 main = do
-  n <- read <$> getLine
-  case beautiful n of
-    Nothing -> putStrLn "NO SOLUTION"
-    Just xs -> putStrLn . unwords $ map show xs
+    n <- read <$> getLine
+    case beautiful n of
+        Nothing -> putStrLn "NO SOLUTION"
+        Just xs -> putStrLn . unwords $ map show xs

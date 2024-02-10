@@ -1,11 +1,12 @@
-import qualified Data.ByteString.Lazy.Char8 as C
-import           Data.Maybe (fromJust)
+import qualified Data.ByteString.Char8 as C
+import           Data.Char (isSpace)
+import           Data.List (unfoldr)
 
-readInt :: C.ByteString -> Int
-readInt = fst . fromJust . C.readInt
+readInts :: C.ByteString -> [Int]
+readInts = unfoldr (C.readInt . C.dropWhile isSpace)
 
-fromInt :: Int -> C.ByteString
-fromInt = C.pack . show
+showInt :: Int -> C.ByteString
+showInt = C.pack . show
 
 ---
 
@@ -14,4 +15,4 @@ miss xs = tri_num (head xs) - sum (tail xs)
   where tri_num n = n * (n+1) `div` 2
 
 main :: IO ()
-main = C.interact $ fromInt . miss . map readInt . C.words
+main = C.interact $ showInt . miss . readInts
